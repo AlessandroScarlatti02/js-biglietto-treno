@@ -15,10 +15,13 @@ let finalPrice
 
 //Richiesta all'utente dei dati neccessari per il calcolo del prezzo
 let km = prompt("Inserisci i km che vuoi percorrere")
-console.log(km);
+// console.log(km);
 let age = prompt("Inserisci la tua età")
-console.log(age)
+// console.log(age)
 
+
+
+// Condizioni per calcolare lo sconto del biglietto
 if (age >= 18 && age <= 64) {
     price = kmPrice * km
     priceElement.innerHTML = price.toFixed(2)
