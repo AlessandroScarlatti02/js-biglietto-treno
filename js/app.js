@@ -24,21 +24,20 @@ let age = prompt("Inserisci la tua età")
 // Condizioni per calcolare lo sconto del biglietto
 if (age >= 18 && age <= 64) {
     price = kmPrice * km
-    priceElement.innerHTML = price.toFixed(2)
+    finalPrice = price
 }
 
 else if (age >= 65) {
     price = kmPrice * km
     discount = (price * over) / 100
     finalPrice = price - discount
-    priceElement.innerHTML = finalPrice.toFixed(2)
 }
 
 else {
     price = kmPrice * km
     discount = (price * under) / 100
     finalPrice = price - discount
-    priceElement.innerHTML = finalPrice.toFixed(2)
 }
 
+priceElement.innerHTML = finalPrice.toFixed(2)
 console.log(price);
